@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-05 — v5
+
+- **Added a sixth skill: `db-quality-baseline`.** The existing five govern how work is done; none of them answers "how good is this store, really". This one measures it with reproducible read-only checks and produces a baseline to compare against later. It encodes the one thing the tests made obvious: control numbers prove two sources agree, not that either is right.
+- **Added `templates/db-baseline-input.md`**, a five-field fill-in sheet (scope, core facts and their authoritative field, control numbers with both sides, business keys, who confirms). Without it the skill degrades into a questionnaire.
+- **README (EN and ZH): five → six**, with the diagram gaining a measurement node that runs before the build and after every change.
+
 ## 2026-11-05 — v4
 
 - **Trimmed prose, then rebalanced.** The trim took it to 23,944 bytes; the new Examples sections bring it to 28,983 — about the original size, but the padding is gone and what remains is rules, examples, pitfalls and a self-check.
@@ -31,9 +37,15 @@
 
 # 修订记录
 
+## 2026-11-05 — 第五版
+
+- **新增第六个技能 `db-quality-baseline`。** 前五个管「怎么做事」，没有一个回答「这个库到底有多好」。它用可复跑的只读检查把质量量出来，形成可以事后对比的基线。它写进了测试里最明显的一条：控制数证明两个来源一致，证明不了其中任何一个是对的。
+- **新增 `templates/db-baseline-input.md`**，五格填空表（范围、核心事实与权威字段、两侧独立的控制数、业务键、谁去确认）。没有这张表，技能会退化成问卷。
+- **README 中英同步：五个 → 六个**，图上加了测量节点（动手前跑一次，每次改动后再跑一次）。
+
 ## 2026-11-05 — 第四版
 
-- **按实测精简 19%**（合计 29,251 → 23,944 字节）。四轮对照测试里从没改变过行为的论述删掉；真正起作用的那几条原样保留（不许编造、声明未查范围、不替业务方拍板、独立复算、唯一权威源/唯一写入口、改后读回）。
+- **按实测精简，然后重新平衡**：精简后 23,944 字节；加上新的「示例」节之后是 28,983，基本回到原版大小——但废话没了，剩下的是规则、示例、坑和自检。
 - **每份新增「必查项」**：都是生产导出里真见过的脏点——重复行（完全重复、只差一个标识）、数字列里的「约20」「20台」「—」和空、单位和含税口径混用、0 与字母 O 撞号、日期多种格式、状态多种写法、状态与凭证矛盾。
 - **每份新增三行「自检」**，跑完可以直接打勾，不必回头再读流程。
 - **为什么**：测试里装与不装在正确率上打平（19/20 对 20/20、13/14 对 14/14、脏点识别 15/16 对 16/16），唯一稳定复现的差异是「可追溯性」——写清依据、写清没查什么、写清谁去确认。所以技能改成服务于这件事，并压短，免得这几条被埋掉。
