@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-05 — v3
+
+- **License changed to MIT.** Replaced CC BY-NC 4.0. The skills can now be used, copied, modified, and redistributed without restriction, including in commercial work; only the copyright notice must stay.
+- **Repository address changed.** Now published at `GG-yangliu/agent-governance-skills`. Old links redirect automatically.
+
 ## 2026-10-21 — v2
 
 - **Bilingual editions.** Every skill now ships `SKILL.md` (English, for the agent) and `SKILL.zh-CN.md` (Chinese, for humans).
@@ -16,6 +21,11 @@
 ---
 
 # 修订记录
+
+## 2026-11-05 — 第三版
+
+- **许可证改为 MIT。** 从 CC BY-NC 4.0 换过来：可以自由使用、复制、修改、再分发，包括商业用途，只需保留版权声明。
+- **仓库地址变更。** 现在在 `GG-yangliu/agent-governance-skills`，旧链接会自动跳转。
 
 ## 2026-10-21 — 第二版
 

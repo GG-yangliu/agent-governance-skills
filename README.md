@@ -55,7 +55,7 @@ If your library already contains a skill with the same name, either use the `-ge
 
 ## Status and license
 
-Licensed under **CC BY-NC 4.0** (Attribution–NonCommercial) — see [LICENSE](LICENSE). You may share and adapt these skills with attribution, but you may not use them for commercial purposes. No warranty is provided.
+Licensed under the **MIT License** — see [LICENSE](LICENSE). Use, copy, modify, and redistribute freely, including in commercial products; just keep the copyright notice. No warranty is provided.
 
 The skills describe methods, not policy: they do not replace accounting, legal, domain, or data-ownership approval.
 
@@ -120,6 +120,6 @@ flowchart TD
 
 ## 状态与许可
 
-采用 CC BY-NC 4.0 许可证（署名—非商业性使用 4.0 国际），见仓库里的 LICENSE 文件。别人可以复制、分发、修改，但必须注明出处，且不得用于商业目的；不提供任何担保。
+采用 MIT 许可证，见仓库里的 LICENSE 文件。可以自由使用、复制、修改、再分发，包括用在商业产品里；只需保留版权声明。不提供任何担保。
 
 这些技能写的是方法，不是制度：它们不能替代会计、法律、业务口径或数据归属方面的审批。
