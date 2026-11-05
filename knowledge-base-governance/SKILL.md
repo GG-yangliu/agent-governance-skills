@@ -18,12 +18,21 @@ Reduce conflicting copies in a shared knowledge base by making authority, naviga
 
 ## Must-check items
 
-Rules are generic; the bracketed example is one domain — substitute your own.
+Rules for any document store. Examples illustrate; they do not bound the check.
 
-- **Duplicate pages in one batch.** Name the authoritative one; do not delete others without the owner. [policy library: two copies of a leave policy, identical except the owner field]
-- **One term written several ways.** Search every variant or stale copies survive the scan. [abbreviation, traditional/simplified, typo]
-- **A rule carrying a mixed unit, basis or date format.** Unify first; otherwise the "latest" comparison and the figure both mislead. [a threshold in yuan in one paragraph, in 10k yuan in another]
-- **Page status contradicting its evidence.** Report it. [marked "effective" with no approval record]
+- **Duplicate pages in one batch.** Name the authoritative one; never delete the others without the owner.
+- **One term written several ways.** Search every variant, otherwise stale copies survive the scan.
+- **Mixed units, basis or date formats inside a rule.** Unify first, or both the "latest" comparison and the figure mislead.
+- **A page status its approval evidence does not support.** Report the mismatch; do not promote or retire the page on your own.
+
+## Examples
+
+Illustrations only — replace them with your own domain's cases.
+
+- Two copies of the same policy, identical except the owner field.
+- A term appearing as an abbreviation, in traditional characters, and misspelled.
+- A threshold stated in units in one paragraph and in thousands in another.
+- A page marked "effective" with no approval record.
 
 ## Pitfalls
 

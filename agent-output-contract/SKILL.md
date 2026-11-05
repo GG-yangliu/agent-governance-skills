@@ -19,12 +19,21 @@ Define a contract for an agent that reads data and returns an answer, so source 
 
 ## Must-check items
 
-These check the answer, not the data model. Each rule is generic; the example in brackets is from one domain — substitute your own.
+Check the answer itself, not the data model. Rules are generic; the examples below illustrate them and do not bound them.
 
-- **Unstated unit or basis.** An amount without unit, scale, or gross/net basis is not comparable; if the source is silent, write "basis not stated". [trade: a contract amount "2,150,000" with no currency and no tax basis]
-- **Approximation presented as a figure.** Carry it separately, never into the total as if exact. [logistics: a quantity cell reading "~20"]
-- **Status claiming completion while its evidence is missing.** Show both, label it a conflict. [a row marked shipped with an empty dispatch reference]
-- **One entity, several spellings.** Say which rows matched and which did not. [CRM: "Acme Ltd" / "Acme" / "ACME Limited" counted as three accounts]
+- **A value without its unit or basis.** Currency, scale and gross/net must be stated beside every amount; if the source is silent, write "basis not stated" rather than assuming one.
+- **An approximation carried as a figure.** Keep it out of totals and label it approximate.
+- **A completion status whose evidence is missing.** Do not treat "done" as verified: show the status and the missing evidence side by side and call it a conflict.
+- **One entity or status in several spellings.** State which rows matched and which did not, so the reader knows what the answer covers.
+
+## Examples
+
+Illustrations only — replace them with your own domain's cases.
+
+- A contract amount written as "2,150,000" with no currency and no statement of basis.
+- A quantity cell reading "~20" added into a total as if exact.
+- A record marked shipped while its dispatch reference is empty.
+- A customer recorded as "Acme Ltd", "Acme" and "ACME Limited" and counted as three.
 
 ## Pitfalls
 

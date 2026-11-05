@@ -19,12 +19,21 @@ Give every fact one authoritative write location; derive everything else through
 
 ## Must-check items
 
-Generic rules; the bracketed example is one domain.
+Rules for any relational model. Examples illustrate; they do not bound the check.
 
-- **Duplicated facts.** One fact hand-typed in several places drifts the moment one copy is edited. [orders: the customer phone stored on every order row]
-- **Derived values typed by hand.** If the inputs exist, the value must be computed. [an amount column filled manually beside unit price and quantity]
-- **One entity, several spellings.** Count variants before counting rows. ["Acme Ltd" / "Acme" / "ACME"]
-- **Status wording not unified, or status contradicting its evidence.** [marked complete while the reference field is blank]
+- **A fact with more than one write location.** Name which location is authoritative, mark the others for cleanup, and do not delete without the owner.
+- **A value that could be computed but is typed by hand.** Show the hand-typed value beside the recomputed one and state the difference.
+- **One entity in several spellings.** List the variants with row counts, then count entities once.
+- **Fields that contradict each other.** When two fields claim the same state, show both and label it a conflict instead of picking the friendlier one.
+
+## Examples
+
+Illustrations only — replace them with your own domain's cases.
+
+- A customer phone stored on every order row.
+- An amount column filled manually while unit price and quantity both exist.
+- "Acme Ltd" / "Acme" / "ACME" across three rows.
+- A row marked complete while its reference field is blank.
 
 ## Pitfalls
 

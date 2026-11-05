@@ -24,12 +24,21 @@ Recompute control values for a defined set of records through independent paths.
 
 ## Must-check items
 
-Run these before reporting any total. Generic rules; bracketed examples are from one domain only.
+Run these before reporting any total. Examples illustrate; they do not limit what you must check.
 
-- **Duplicates.** Report the total with and without them; never delete or merge without the owner. [trade: the same batch twice, one row differing only by waybill number]
-- **Text in numeric cells.** Summing them as zero hides missing data behind a clean total. ["about 20", "20 units", "—", blank]
-- **Mixed units or basis.** Unify and state the basis, or mark the total non-comparable. [some amounts in yuan, others in 10k yuan; tax basis stated on two rows only]
-- **Ambiguous identifiers and mixed date formats.** They break matching and period cut-offs; normalize and list what changed. [0 vs letter O in one ID position; "2026/3/5" beside "03-05"]
+- **Duplicates.** Report the total with and without them; never merge or delete without the owner's confirmation.
+- **Text in numeric cells.** List each one; summing them as zero hides missing data behind a clean total.
+- **Mixed units, scale or basis.** Unify and state the basis, or mark the total non-comparable.
+- **Ambiguous identifier characters and mixed date formats.** They break matching and period cut-offs; normalize, then list what changed.
+
+## Examples
+
+Illustrations only — replace them with your own domain's cases.
+
+- The same batch recorded twice, the second row differing only by a reference number.
+- "about 20", "20 units", "—", or a blank cell inside a quantity column.
+- Some amounts in units, others in thousands, with a basis stated on two rows only.
+- 0 and letter O in the same position of an identifier; "2026/3/5" beside "03-05".
 
 ## Pitfalls
 

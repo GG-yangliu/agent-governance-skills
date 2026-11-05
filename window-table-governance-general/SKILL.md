@@ -18,12 +18,21 @@ Clarify where each business action is recorded and where its completion is verif
 
 ## Must-check items
 
-Generic rules; bracketed example from one domain.
+Rules for separating entry from verification. Examples illustrate; they do not bound the check.
 
-- **A summary view that accepts edits.** If it saves an edit, it is a write surface, whatever its name says. [retail: a stock dashboard where someone added a SKU that never reached the receiving table]
-- **The same record entered through two surfaces.** [a shipment entered in the batch table, then again in the dashboard]
-- **Status spelled several ways in the verification view.** State which spellings it counts. ["shipped" / "dispatched" / "sent"]
-- **Status contradicting its evidence.** Report the conflict; do not pick a side.
+- **A view that accepts edits.** If it can save an edit it is a write surface, whatever it is called: check permissions, not labels.
+- **One record entered through two surfaces.** Compare both and report the duplicate instead of choosing one.
+- **Status spellings the verification view does not declare.** Make the view say which spellings it counts, or its totals will drift.
+- **Verification that trusts a status instead of its evidence.** Check the reference behind the status; if it is missing, report the mismatch.
+
+## Examples
+
+Illustrations only — replace them with your own domain's cases.
+
+- A stock dashboard where someone added a SKU that never reached the receiving table.
+- A shipment entered in the batch table and again in the dashboard.
+- "shipped" / "dispatched" / "sent" counted differently by two views.
+- A batch marked complete with no dispatch reference.
 
 ## Pitfalls
 
