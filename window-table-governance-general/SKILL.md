@@ -9,7 +9,7 @@ Clarify where each business action is recorded and where its completion is verif
 
 ## Workflow
 
-1. **List the actions** as observable events: submit, record a result, approve, hand off.
+1. **List the actions**, each as an observable event — who did what, provable by a record or an event.
 2. **Trace each action to its write surface:** the exact form, table, page, or endpoint that stores it, and the field or event proving it happened. A summary counts only if it accepts and persists the action.
 3. **Map the reporting surfaces:** which summaries and views show the result, how fresh, what they omit.
 4. **Check access per role.** A preparer's access does not prove a reviewer's.
@@ -33,6 +33,7 @@ Illustrations only — replace them with your own domain's cases.
 - A shipment entered in the batch table and again in the dashboard.
 - "shipped" / "dispatched" / "sent" counted differently by two views.
 - A batch marked complete with no dispatch reference.
+- Actions worth listing: submit, record a result, approve, hand off.
 
 ## Pitfalls
 

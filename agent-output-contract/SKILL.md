@@ -34,12 +34,13 @@ Illustrations only — replace them with your own domain's cases.
 - A quantity cell reading "~20" added into a total as if exact.
 - A record marked shipped while its dispatch reference is empty.
 - A customer recorded as "Acme Ltd", "Acme" and "ACME Limited" and counted as three.
+- A missing category defaulted to "other" and then reported as if it had been read.
 
 ## Pitfalls
 
 - **"No record found" and "the lookup failed" are different answers.** Reporting a tool error as an empty result claims a check that never happened.
 - **Pagination and rate limits** can leave the first N rows presented as the full set. State rows retrieved and the total if known.
-- **Silent fallbacks** (defaults, inferred categories, assumptions) must be labeled as inference. Check timestamps on caches and summaries when freshness matters.
+- **Silent fallbacks** must be labeled as inference. Check timestamps on caches and summaries when freshness matters.
 
 ## Self-check
 
