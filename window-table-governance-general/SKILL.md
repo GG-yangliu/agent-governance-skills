@@ -18,7 +18,9 @@ Clarify where each business action is recorded and where its completion is verif
 
 ## Must-check items
 
-- Status contradicting its evidence (shipped, no waybill number): report the conflict, do not pick a side.
+> Examples below are generic on purpose — substitute your own domain's fields and values.
+
+- Status contradicting its evidence (marked complete, proof missing): report the conflict, do not pick a side.
 - Same state written several ways: the verification view must say which spellings it counts.
 - The same record entered through two write surfaces (same-batch duplicate, or identical except one identifier).
 

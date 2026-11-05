@@ -18,9 +18,11 @@ Reduce conflicting copies in a shared knowledge base by making authority, naviga
 
 ## Must-check items
 
+> Examples below are generic on purpose — substitute your own domain's fields and values.
+
 - Duplicate pages in one batch (exact, or identical except one field): name the authoritative one; do not delete others without the owner.
 - One entity or term written several ways (abbreviation, traditional/simplified, typo): search every variant in the scan, or stale copies survive.
-- Mixed date formats, mixed amount units, or unstated tax basis inside a rule: unify, or the "latest" comparison and the figure both mislead.
+- Mixed date formats, mixed amount units, or an unstated basis inside a rule: unify, or the "latest" comparison and the figure both mislead.
 - Page status ("effective", "draft") contradicting its evidence (no approval record): report it.
 
 ## Pitfalls

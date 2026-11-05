@@ -24,10 +24,12 @@ Recompute control values for a defined set of records through independent paths.
 
 ## Must-check items
 
+> Examples below are generic on purpose — substitute your own domain's fields and values.
+
 - Same-batch duplicates (exact, or identical except one identifier) inflate counts and amounts. Report totals with and without them.
 - Number cells holding "about 20", "20 units", "—", or blank: list them. Summing them as 0 hides missing data behind a clean total.
-- Mixed amount units (yuan / 10k yuan / thousands separator / none) or unstated tax basis: unify and state the basis, or mark the total non-comparable.
-- Ambiguous identifier characters (0 vs letter O in a VIN) and mixed date formats break matching and cut-offs. Normalize and list what changed.
+- Mixed amount units (unit or thousand, thousands separators, none) or an unstated basis: unify and state the basis, or mark the total non-comparable.
+- Ambiguous identifier characters (0 vs letter O, 1 vs letter I) and mixed date formats break matching and cut-offs. Normalize and list what changed.
 
 ## Pitfalls
 

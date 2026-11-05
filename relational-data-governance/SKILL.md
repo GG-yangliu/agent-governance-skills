@@ -19,10 +19,12 @@ Give every fact one authoritative write location; derive everything else through
 
 ## Must-check items
 
-- Same-batch duplicates: exact copies, and rows identical except one identifier (e.g. waybill number). Report them; do not delete or merge without the owner.
+> Examples below are generic on purpose — substitute your own domain's fields and values.
+
+- Same-batch duplicates: exact copies, and rows identical except one identifier (e.g. a secondary reference number). Report them; do not delete or merge without the owner.
 - Numeric columns holding "about 20", "20 units", "—", or blank: list each; never coerce to 0.
 - One entity written several ways (abbreviation, traditional/simplified, typo): count variants before counting rows.
-- Status wording not unified, or status contradicting its evidence (shipped, no waybill number).
+- Status wording not unified, or status contradicting its evidence (marked complete, proof missing).
 
 ## Pitfalls
 

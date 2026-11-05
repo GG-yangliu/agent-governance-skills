@@ -19,10 +19,12 @@ Define a contract for an agent that reads data and returns an answer, so source 
 
 ## Must-check items
 
-- Report data-quality findings with row identifiers instead of cleaning silently: duplicates (exact, or identical except one identifier), "about 20" / "20 units" / "—" / blank in numeric columns, 0 vs letter O in identifiers.
-- Put unit and tax basis beside every amount (yuan / 10k yuan, tax-inclusive or not); if the source is silent, write "basis not stated".
+> Examples below are generic on purpose — substitute your own domain's fields and values.
+
+- Report data-quality findings with row identifiers instead of cleaning silently: duplicates (exact, or identical except one secondary identifier); numeric cells holding an approximation ("~20"), a unit-bearing value ("20 units"), a dash, or blank; identifiers where characters collide (0 vs letter O, 1 vs letter I).
+- Put unit and basis beside every amount — currency and scale (unit or thousand), and whether the figure is gross or net; if the source is silent, write "basis not stated".
 - Mixed date formats, or one entity or status spelled several ways: say which rows matched and which did not.
-- Status contradicting its evidence (shipped, no waybill number): show both and label it a conflict.
+- Status contradicting its own evidence (marked complete while the referenced proof is missing): show both and label it a conflict.
 
 ## Pitfalls
 
