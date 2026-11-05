@@ -3,7 +3,7 @@
 ## 2026-11-05 — v4
 
 - **Trimmed by 19% (total 29,251 → 23,944 bytes).** Prose that four rounds of A/B testing never changed behaviour was cut; the judgments that did matter were kept verbatim (no fabrication, state what you did not check, never decide for the business owner, independent recount, one authoritative source / one write path, read back after writing).
-- **Added "Must-check items"** to every skill: the dirt actually seen in production exports — duplicate rows (exact, and differing only by one identifier), "about 20" / "20 units" / "—" / blank in numeric columns, mixed units and tax basis, identifiers where 0 and letter O collide, mixed date formats, status words spelled several ways, status contradicting its evidence.
+- **Added "Must-check items"** to every skill: the dirt actually seen in production exports, written as a generic rule followed by one bracketed example from a single domain (trade, logistics, CRM, retail) — so the rule transfers and the example stays concrete. Replace the example with your own.
 - **Added a three-line "Self-check"** so a run can be ticked off without re-reading the workflow.
 - **Why:** in the tests, loaded vs not loaded scored the same on correctness (19/20 vs 20/20, 13/14 vs 14/14, 15/16 vs 16/16 dirty-point recall). The one reproducible difference was traceability: citing the source, stating what was not checked, saying who must confirm. So the skills are now written for that, and shortened so the traceability rules are not buried.
 

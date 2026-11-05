@@ -24,12 +24,12 @@ Recompute control values for a defined set of records through independent paths.
 
 ## Must-check items
 
-> Examples below are generic on purpose — substitute your own domain's fields and values.
+Run these before reporting any total. Generic rules; bracketed examples are from one domain only.
 
-- Same-batch duplicates (exact, or identical except one identifier) inflate counts and amounts. Report totals with and without them.
-- Number cells holding "about 20", "20 units", "—", or blank: list them. Summing them as 0 hides missing data behind a clean total.
-- Mixed amount units (unit or thousand, thousands separators, none) or an unstated basis: unify and state the basis, or mark the total non-comparable.
-- Ambiguous identifier characters (0 vs letter O, 1 vs letter I) and mixed date formats break matching and cut-offs. Normalize and list what changed.
+- **Duplicates.** Report the total with and without them; never delete or merge without the owner. [trade: the same batch twice, one row differing only by waybill number]
+- **Text in numeric cells.** Summing them as zero hides missing data behind a clean total. ["about 20", "20 units", "—", blank]
+- **Mixed units or basis.** Unify and state the basis, or mark the total non-comparable. [some amounts in yuan, others in 10k yuan; tax basis stated on two rows only]
+- **Ambiguous identifiers and mixed date formats.** They break matching and period cut-offs; normalize and list what changed. [0 vs letter O in one ID position; "2026/3/5" beside "03-05"]
 
 ## Pitfalls
 

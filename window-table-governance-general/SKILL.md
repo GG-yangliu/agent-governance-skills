@@ -18,11 +18,12 @@ Clarify where each business action is recorded and where its completion is verif
 
 ## Must-check items
 
-> Examples below are generic on purpose — substitute your own domain's fields and values.
+Generic rules; bracketed example from one domain.
 
-- Status contradicting its evidence (marked complete, proof missing): report the conflict, do not pick a side.
-- Same state written several ways: the verification view must say which spellings it counts.
-- The same record entered through two write surfaces (same-batch duplicate, or identical except one identifier).
+- **A summary view that accepts edits.** If it saves an edit, it is a write surface, whatever its name says. [retail: a stock dashboard where someone added a SKU that never reached the receiving table]
+- **The same record entered through two surfaces.** [a shipment entered in the batch table, then again in the dashboard]
+- **Status spelled several ways in the verification view.** State which spellings it counts. ["shipped" / "dispatched" / "sent"]
+- **Status contradicting its evidence.** Report the conflict; do not pick a side.
 
 ## Pitfalls
 

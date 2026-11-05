@@ -19,12 +19,12 @@ Give every fact one authoritative write location; derive everything else through
 
 ## Must-check items
 
-> Examples below are generic on purpose — substitute your own domain's fields and values.
+Generic rules; the bracketed example is one domain.
 
-- Same-batch duplicates: exact copies, and rows identical except one identifier (e.g. a secondary reference number). Report them; do not delete or merge without the owner.
-- Numeric columns holding "about 20", "20 units", "—", or blank: list each; never coerce to 0.
-- One entity written several ways (abbreviation, traditional/simplified, typo): count variants before counting rows.
-- Status wording not unified, or status contradicting its evidence (marked complete, proof missing).
+- **Duplicated facts.** One fact hand-typed in several places drifts the moment one copy is edited. [orders: the customer phone stored on every order row]
+- **Derived values typed by hand.** If the inputs exist, the value must be computed. [an amount column filled manually beside unit price and quantity]
+- **One entity, several spellings.** Count variants before counting rows. ["Acme Ltd" / "Acme" / "ACME"]
+- **Status wording not unified, or status contradicting its evidence.** [marked complete while the reference field is blank]
 
 ## Pitfalls
 

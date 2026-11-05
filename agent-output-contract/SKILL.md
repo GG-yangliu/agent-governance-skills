@@ -19,12 +19,12 @@ Define a contract for an agent that reads data and returns an answer, so source 
 
 ## Must-check items
 
-> Examples below are generic on purpose — substitute your own domain's fields and values.
+These check the answer, not the data model. Each rule is generic; the example in brackets is from one domain — substitute your own.
 
-- Report data-quality findings with row identifiers instead of cleaning silently: duplicates (exact, or identical except one secondary identifier); numeric cells holding an approximation ("~20"), a unit-bearing value ("20 units"), a dash, or blank; identifiers where characters collide (0 vs letter O, 1 vs letter I).
-- Put unit and basis beside every amount — currency and scale (unit or thousand), and whether the figure is gross or net; if the source is silent, write "basis not stated".
-- Mixed date formats, or one entity or status spelled several ways: say which rows matched and which did not.
-- Status contradicting its own evidence (marked complete while the referenced proof is missing): show both and label it a conflict.
+- **Unstated unit or basis.** An amount without unit, scale, or gross/net basis is not comparable; if the source is silent, write "basis not stated". [trade: a contract amount "2,150,000" with no currency and no tax basis]
+- **Approximation presented as a figure.** Carry it separately, never into the total as if exact. [logistics: a quantity cell reading "~20"]
+- **Status claiming completion while its evidence is missing.** Show both, label it a conflict. [a row marked shipped with an empty dispatch reference]
+- **One entity, several spellings.** Say which rows matched and which did not. [CRM: "Acme Ltd" / "Acme" / "ACME Limited" counted as three accounts]
 
 ## Pitfalls
 

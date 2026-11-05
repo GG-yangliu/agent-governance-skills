@@ -18,12 +18,12 @@ Reduce conflicting copies in a shared knowledge base by making authority, naviga
 
 ## Must-check items
 
-> Examples below are generic on purpose — substitute your own domain's fields and values.
+Rules are generic; the bracketed example is one domain — substitute your own.
 
-- Duplicate pages in one batch (exact, or identical except one field): name the authoritative one; do not delete others without the owner.
-- One entity or term written several ways (abbreviation, traditional/simplified, typo): search every variant in the scan, or stale copies survive.
-- Mixed date formats, mixed amount units, or an unstated basis inside a rule: unify, or the "latest" comparison and the figure both mislead.
-- Page status ("effective", "draft") contradicting its evidence (no approval record): report it.
+- **Duplicate pages in one batch.** Name the authoritative one; do not delete others without the owner. [policy library: two copies of a leave policy, identical except the owner field]
+- **One term written several ways.** Search every variant or stale copies survive the scan. [abbreviation, traditional/simplified, typo]
+- **A rule carrying a mixed unit, basis or date format.** Unify first; otherwise the "latest" comparison and the figure both mislead. [a threshold in yuan in one paragraph, in 10k yuan in another]
+- **Page status contradicting its evidence.** Report it. [marked "effective" with no approval record]
 
 ## Pitfalls
 
