@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-05 — v4
+
+- **Trimmed by 19% (total 29,251 → 23,944 bytes).** Prose that four rounds of A/B testing never changed behaviour was cut; the judgments that did matter were kept verbatim (no fabrication, state what you did not check, never decide for the business owner, independent recount, one authoritative source / one write path, read back after writing).
+- **Added "Must-check items"** to every skill: the dirt actually seen in production exports — duplicate rows (exact, and differing only by one identifier), "about 20" / "20 units" / "—" / blank in numeric columns, mixed units and tax basis, identifiers where 0 and letter O collide, mixed date formats, status words spelled several ways, status contradicting its evidence.
+- **Added a three-line "Self-check"** so a run can be ticked off without re-reading the workflow.
+- **Why:** in the tests, loaded vs not loaded scored the same on correctness (19/20 vs 20/20, 13/14 vs 14/14, 15/16 vs 16/16 dirty-point recall). The one reproducible difference was traceability: citing the source, stating what was not checked, saying who must confirm. So the skills are now written for that, and shortened so the traceability rules are not buried.
+
 ## 2026-11-05 — v3
 
 - **License changed to MIT.** Replaced CC BY-NC 4.0. The skills can now be used, copied, modified, and redistributed without restriction, including in commercial work; only the copyright notice must stay.
@@ -21,6 +28,13 @@
 ---
 
 # 修订记录
+
+## 2026-11-05 — 第四版
+
+- **按实测精简 19%**（合计 29,251 → 23,944 字节）。四轮对照测试里从没改变过行为的论述删掉；真正起作用的那几条原样保留（不许编造、声明未查范围、不替业务方拍板、独立复算、唯一权威源/唯一写入口、改后读回）。
+- **每份新增「必查项」**：都是生产导出里真见过的脏点——重复行（完全重复、只差一个标识）、数字列里的「约20」「20台」「—」和空、单位和含税口径混用、0 与字母 O 撞号、日期多种格式、状态多种写法、状态与凭证矛盾。
+- **每份新增三行「自检」**，跑完可以直接打勾，不必回头再读流程。
+- **为什么**：测试里装与不装在正确率上打平（19/20 对 20/20、13/14 对 14/14、脏点识别 15/16 对 16/16），唯一稳定复现的差异是「可追溯性」——写清依据、写清没查什么、写清谁去确认。所以技能改成服务于这件事，并压短，免得这几条被埋掉。
 
 ## 2026-11-05 — 第三版
 
