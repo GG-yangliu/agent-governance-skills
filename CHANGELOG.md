@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-12 — v7
+
+- **Added two skills: `windows-doubleclick-deliverables-general` and `external-agent-review-general`.** The first covers handing a result to someone who will never open a terminal: `.bat` encoding and line endings, results written to a file rather than the console, what a zero-basis readme must contain, and how to explain a tool the user cannot see. The second covers buying an independent second opinion: how to write a self-contained brief, two CLI forms that work non-interactively, the seven-section brief skeleton, and judging the returning points as accepted / discounted / rejected with the evidence.
+- **Why these two and not the other three drafts:** the remaining candidates (container cost allocation, Chinese formal document typesetting, template-driven document generation) are industry procedures first and methods second; publishing them would widen the repository's scope without adding a transferable rule.
+- **README: nine → eleven**, table and both diagrams updated, install section now names the extra helper script and states that it uses one product's print-mode flags.
+- **Same constraints as v6:** every rule from the source drafts survives, measured numbers live in Examples, no local paths, no private skill names, no vendor lock-in beyond one clearly-labelled example command.
+
 ## 2026-11-12 — v6
 
 - **Added three skills: `automation-diagnosis-general`, `business-rule-registry-general`, `skill-effectiveness-ab-test-general`.** The first six covered building, recording, verifying, speaking, preserving and measuring. They did not cover: what to do when a deployed automation stops matching reality (diagnose the layer before changing anything), how a rule lives across a registry, a text and a live model (change all of them together), and whether a skill changes model behaviour at all (A/B the skill itself).
@@ -46,6 +53,13 @@
 ---
 
 # 修订记录
+
+## 2026-11-12 — 第七版
+
+- **新增两个技能：`windows-doubleclick-deliverables-general`、`external-agent-review-general`。** 前者管「把结果交给一个永远不开终端的人」：`.bat` 的编码与行尾、结果要落到文件而不是只打在黑窗口、零基础说明必须有的节、以及怎么解释一个用户看不见的工具。后者管「买一份独立第二意见」：简报怎么写到自包含、两种可非交互跑的 CLI 写法、七节简报骨架、以及拿回来的意见怎么判成成立／打折扣／不成立。
+- **为什么只加这两个**：另外三份草稿（混装柜费用分摊、中文正式文书排版、按模板生成文档）首先是行业流程，其次才是方法；发出去会摊宽仓库范围，但不增加可迁移的规则。
+- **README 中英同步：九个 → 十一个**，表格与两张关系图都改；安装节里点名那个额外脚本，并写明它用的是某一个产品的打印模式参数。
+- **约束与 v6 相同**：源稿每条规则句都保留；实测数字只进示例；不出现本机路径与私有技能名；厂商绑定只出现在一处明确标注的示例命令里。
 
 ## 2026-11-12 — 第六版
 
