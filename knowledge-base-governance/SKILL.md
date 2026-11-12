@@ -24,6 +24,8 @@ Rules for any document store. Examples illustrate; they do not bound the check.
 - **One term written several ways.** Search every variant, otherwise stale copies survive the scan.
 - **Mixed units, basis or date formats inside a rule.** Unify first, or both the "latest" comparison and the figure mislead.
 - **A page status its approval evidence does not support.** Report the mismatch; do not promote or retire the page on your own.
+- **Two derived copies that agree prove agreement, not correctness.** Compare three sides — the published copy, the generated artifact, and a fresh read of the source. When the sides are sets of identifiers, take the difference in both directions; never compare totals alone.
+- **Counting rows or matching keywords passes while rows are missing.** Parse both sides into structure and compare row by row, cell by cell.
 
 ## Examples
 
@@ -45,4 +47,6 @@ Illustrations only — replace them with your own domain's cases.
 
 - Each rule has one authoritative location; every copy is marked as a pointer.
 - Each edit was read back for the specific content, not just the revision number.
+- The checker itself was tested: inject one known error and confirm it reports red. A green run from an untested checker is not evidence.
+- Comparisons that only ever touch derived copies are labeled as agreement, not correctness.
 - Open ownership or approval questions are listed as open.

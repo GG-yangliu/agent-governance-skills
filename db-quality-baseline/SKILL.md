@@ -1,6 +1,6 @@
 ---
 name: db-quality-baseline
-description: "Use when measuring how good a database actually is, before fixing anything."
+description: "Use when measuring how good a data store actually is."
 ---
 
 # Database Quality Baseline
