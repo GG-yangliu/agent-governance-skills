@@ -53,7 +53,7 @@ flowchart TD
 
 Read it as one loop: measure where you are, register the rules, build the model, fix where people record actions, verify with an independent recount, diagnose what actually ran when reality disagrees, speak with evidence, then preserve the result as one authoritative copy. Skill 9 is applied to the skills themselves — before changing one and after.
 
-Skills 2–6 are a chain. Skill 7 cuts across all of them. Skill 8 closes the loop. Skill 1 runs before and after, so "it got better" is a comparison rather than an opinion.
+Skills 2–6 are a chain. Skill 7 cuts across all of them. Skill 8 closes the loop. Skill 1 can run before and after any step, so "it got better" is a comparison rather than an opinion.
 
 A fill-in sheet for skill 1 is in [`templates/db-baseline-input.md`](templates/db-baseline-input.md).
 
@@ -67,7 +67,7 @@ Copy a skill folder into your agent's skills directory. Nothing else is required
     SKILL.zh-CN.md
 ```
 
-`skill-effectiveness-ab-test-general` also ships `scripts/run_ab.sh` (a shell helper); `CLAUDE` must point at a real model CLI executable.
+`skill-effectiveness-ab-test-general` also ships `scripts/run_ab.sh` (a shell helper); the script calls a model CLI in print mode (`-p`, `--allowedTools Read`) — written for Claude Code; change those two flags for another CLI, and point `CLAUDE` at the executable, not a wrapper.
 
 If your library already contains a skill with the same name, either use the `-general` edition alongside it, or merge the two intentionally.
 
@@ -136,7 +136,7 @@ flowchart TD
 
 一句话记：**测 → 登 → 建 → 录 → 验 → 诊 → 说 → 存**，另加一个横着用的「证」。
 
-②到⑥是一条链：先把规则登记清楚，再把人动作的落点定准，然后用控制数证明改动没坏事，一旦现实和记录不一致就停在诊断。⑦ 横向贯穿：不管在哪一步，AI 说话都要守规矩。⑧ 收尾：结论只沉淀成一份权威副本。① 是横着用的体检：改之前跑一次当基线，改之后再跑一次做对比——「变好了」是比出来的。⑨ 是自证：这套技能本身也要被同一批案例跑两次，差别只在读没读技能文件。
+②到⑥是一条链：先把规则登记清楚，再把人动作的落点定准，然后用控制数证明改动没坏事，一旦现实和记录不一致就停在诊断。⑦ 横向贯穿：不管在哪一步，AI 说话都要守规矩。⑧ 收尾：结论只沉淀成一份权威副本。① 是横着用的体检，可以挂在任何一步之前和之后：改之前跑一次当基线，改之后再跑一次做对比——「变好了」是比出来的。⑨ 是自证：这套技能本身也要被同一批案例跑两次，差别只在读没读技能文件。
 
 第一个技能的填空表在 [`templates/db-baseline-input.md`](templates/db-baseline-input.md)。
 
@@ -150,7 +150,7 @@ flowchart TD
     SKILL.zh-CN.md
 ```
 
-`skill-effectiveness-ab-test-general` 另外带一个 `scripts/run_ab.sh`；跑之前把 `CLAUDE` 指向真实的模型命令行程序（不要用包装脚本）。
+`skill-effectiveness-ab-test-general` 另外带一个 `scripts/run_ab.sh`；脚本按 Claude Code 的命令行写（`-p`、`--allowedTools Read`），换别的模型命令行要改这两个参数；`CLAUDE` 指向真实可执行文件，不要用包装脚本。
 
 如果库里已经有同名技能，要么把 `-general` 版和它并存，要么明确地把两份合并——别让两份同时「看起来像权威」。
 

@@ -28,7 +28,7 @@ change, an instruction sheet handed to another executor, and the moment before a
    appendix, not in the entry prose either.
    - Wording states the confirmed practice only — no decision-maker's remark, no oral note, no sign-off, no suggestion; an
      unconfirmed rule stays out until it is confirmed.
-   - `source` must locate something: `ledger YYYY-MM-DD / <entry id>`, or a same-directory relative link. "9/17 business team"
+   - `source` must locate something: `ledger YYYY-MM-DD / <entry id>`, or a same-directory relative link. "as agreed in the meeting"
      or "session 10-11" locates nothing a year later, and the fix is a same-day ledger line, never a retrospective
      reconstruction; keep that trail in the appendix with its build, verify and link steps. The body id set must equal the
      appendix id set. A `source` naming the registry itself, or only a version label (`v1.1 added`), locates a *when* and never a
@@ -55,14 +55,9 @@ change, an instruction sheet handed to another executor, and the moment before a
    - A failing value is often not an error but an estimate — a supplier's pre-production guess never validated by a real run.
      Report it as "physically impossible ⇒ at least one of the two fields is unverified", let the owner classify it, and expect
      the durable fix to be a rule (only measured inputs may be used in costing and quoting), not an edit to the number.
-   - Two inputs can rest on different fill bases (one capped by unit count, one by volume), so a denominator computed as
-     Σ(quantity ÷ per-unit capacity) may exceed the physical container count. Two repairs are consistent: keep the inflated
-     denominator and say so in the model's note, or normalize per container (denominator = real container count, each row of a
-     mixed container multiplied by 1 ÷ Σ(slots in it)). Apply the chosen one to every fee pool — both mechanisms total 100% yet
-     split the fee a few points differently per model, so a workbook on one and a registry share table on the other disagree
-     unexplainably. With a mixed container the per-container form matches how the owner reasons ("divide the batch fee by the
-     container count, then each container's contents share by slot") and agrees with container-level fees; prefer it, keep the
-     inflated Σ only as a check cell, and re-check that quantity × per-unit allocation still sums to the total.
+   - When two repairs are both internally consistent, choose the one that matches how the owner reasons, apply it to every
+     pool, and keep the other as a check cell. Two mechanisms can each total 100% and still split the same amount a few
+     points differently, so a workbook built on one and a share table built on the other disagree with nothing to point at.
    - To localize "the shares don't match", compute the implied per-model share under each candidate mechanism and compare it
      with the registry shares: that names the stale side without re-deriving the model.
    - Make the denominator cell's label match its meaning. An auto-summed slot total and a hand-filled real container count are
@@ -77,7 +72,7 @@ change, an instruction sheet handed to another executor, and the moment before a
      leaves the tail of the old line glued to the new text and the two entries merge into one row; read the returned diff after
      every insert-style edit, and if they merged, patch once more on the unique glued text.
    - Table-structure edits (drop or insert a column, renumber sections) are script jobs: loosen the entry-id regex so
-     superseded variants (`CT3-old`, `CT10R`) are not skipped and left with the old column count; renumber every `§N`
+     superseded variants (`T-3-old`, `T-10R`) are not skipped and left with the old column count; renumber every `§N`
      cross-reference in the same pass, largest N first (`§10→§11` before `§9→§10`); and prove the body survived by stripping the
      new appendix and diffing against the pre-edit backup, where the only legal difference is the separator line you added.
 8. **Sweep a re-decided rule across every carrier.** The rule text is the smallest part of the job — the same rule is
@@ -198,8 +193,11 @@ Before reporting, confirm each of these. Examples illustrate; they do not limit 
 Illustrations only — replace them with your own domain's cases.
 
 - A freight rule that lived in a chat message and was restated in a later rate sheet with the opposite threshold.
-- `LG4 | demurrage starts on the fourth free day | effective | built | ledger 2026-03-02 / LG4`.
-- `CT3-old` skipped by a strict regex, so one row still has four columns in a five-column table.
+- `GRP-4 | demurrage starts on the fourth free day | effective | built | ledger 2026-03-02 / GRP-4`.
+- `T-3-old` skipped by a strict regex, so one row still has four columns in a five-column table.
+- Two allocation mechanisms that both total 100% and split the same fee a few points differently: a per-container
+  denominator (each row multiplied by 1 ÷ the slots in its container) against a global Σ(quantity ÷ per-unit capacity)
+  that exceeds the real container count. Every row reconciles; the two artefacts still disagree.
 - `§10→§11` applied before `§9→§10`, so both sections end up numbered 11.
 - A CRM stage renamed while the follow-up column still names the previous owner.
 - An allocation whose denominator reaches 100% only once an unverified container count is included.

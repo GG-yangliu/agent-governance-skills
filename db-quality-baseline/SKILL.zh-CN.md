@@ -1,6 +1,6 @@
 ---
 name: db-quality-baseline
-description: "什么时候用：要量一个数据库到底有多好、且还没动手改之前。"
+description: "要量一个库到底有多好、还没动手改时用本技能。"
 ---
 
 # 数据库质量基线
