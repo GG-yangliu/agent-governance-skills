@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-13 — v8
+
+- **`skill-effectiveness-ab-test-general`: two fixes, both found by re-running it against its own rewritten text.** Four pressurised cases, base against with, scored 12/16 against 13/16 — three ties and one case won by a single item — so the rewrite had not removed the red lines. Both fixes come from what that run exposed, not from review.
+- **"Do not fall back on 'it seems useful'" was read as "must pick a side".** Asked for one line the same evening, both conditions pronounced the whole library useless. The sentence now says plainly that it forbids inventing a verdict and does not demand one, and that with no comparison data the correct delivery is "cannot tell yet" plus the smallest test that would settle it.
+- **The two run-validity checks moved out of Must-check into Workflow step 6.** Under a one-line demand both conditions dropped them: an empty `skills/` directory (wrong copy level) and unscanned read failures are the only things that catch a run which silently became a second baseline. They now sit on the step where the run happens; Must-check keeps the remaining items.
+- **No new skills, no README change.** Nine of the eleven skill files are untouched.
+
 ## 2026-11-12 — v7
 
 - **Added two skills: `windows-doubleclick-deliverables-general` and `external-agent-review-general`.** The first covers handing a result to someone who will never open a terminal: `.bat` encoding and line endings, results written to a file rather than the console, what a zero-basis readme must contain, and how to explain a tool the user cannot see. The second covers buying an independent second opinion: how to write a self-contained brief, two CLI forms that work non-interactively, the seven-section brief skeleton, and judging the returning points as accepted / discounted / rejected with the evidence.
@@ -53,6 +60,13 @@
 ---
 
 # 修订记录
+
+## 2026-11-13 — 第八版
+
+- **`skill-effectiveness-ab-test-general`：拿它自己的改写版做复跑，改出两处。** 四个加压案例、base 对 with，12/16 对 13/16——三平一胜、只差一项，说明改写没删掉红线；两处修订都来自这次复跑暴露的东西，不是来自评审。
+- **「不要退化成『我觉得有用』」被读成了「必须选一边」。** 被要求「今晚给一句话」时，两种条件都直接判了技能库「没用」。现在写明：这句禁的是编结论，不是要结论；没有对照数据时，正确交付是「现在还判不了」＋一个能判出来的最小测法。
+- **两条「这次跑到底有没有跑成」的检查，从必查项挪进工作流第 6 步。** 一旦被要一句话，两侧都把这两条丢了——`skills/` 空着（拷贝层级写错）、没扫读取失败的输出，恰恰是唯一能抓住「这次跑其实退化成了第二次基线」的两条。现在它们放在跑的那一步，必查项留其余几条。
+- **不新增技能，README 不动。** 十一份技能文件里九份未改。
 
 ## 2026-11-12 — 第七版
 
