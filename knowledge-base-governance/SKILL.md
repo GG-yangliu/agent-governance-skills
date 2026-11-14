@@ -24,8 +24,17 @@ Rules for any document store. Examples illustrate; they do not bound the check.
 - **One term written several ways.** Search every variant, otherwise stale copies survive the scan.
 - **Mixed units, basis or date formats inside a rule.** Unify first, or both the "latest" comparison and the figure mislead.
 - **A page status its approval evidence does not support.** Report the mismatch; do not promote or retire the page on your own.
-- **Two derived copies that agree prove agreement, not correctness.** Compare three sides — the published copy, the generated artifact, and a fresh read of the source. When the sides are sets of identifiers, take the difference in both directions; never compare totals alone.
-- **Counting rows or matching keywords passes while rows are missing.** Parse both sides into structure and compare row by row, cell by cell.
+- **Two derived copies that agree prove agreement, not correctness.** Compare three sides — the published copy, the generated artifact, and a fresh read of the source.
+- **Counting rows or matching keywords passes while rows are missing.** Parse both sides into structure before comparing; the comparison itself is in the table below.
+
+## Verification: four failure modes, one check each
+
+| Failure mode (all seen in real edits) | Check |
+|---|---|
+| A rule added to the body, no row added to the appendix or index | **Difference of identifier sets in both directions**: body minus copy and copy minus body must both be empty. Do not compare totals or count keywords — both let a missing row through |
+| A generated artifact disagrees with the page | Parse both into structure (row → cells) and **compare row by row, cell by cell**; character counts prove nothing |
+| Two figures on one page (title says 62, body says 61) | Assert on **known positions**; do **not** regex "N items" out of the whole text — false alarms pile up until nobody reads the red light |
+| A version number collides, or a change never reached the change log | **Read the version line and the change-log table together**: the line must exceed the table's maximum, and the table must contain this change |
 
 ## Examples
 

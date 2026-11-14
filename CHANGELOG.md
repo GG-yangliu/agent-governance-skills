@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-13 — v9
+
+- **`knowledge-base-governance`: added a four-row table that maps each failure mode to its check.** The skill already carried two of the four checks inside its must-check lines (three-way comparison with a set difference; parsing both sides and comparing row by row). The two that were missing are the ones that fail silently: asserting on known positions instead of regexing "N items" out of the whole text, and reading the version line together with the change-log table so that a collision or a missing entry shows up.
+- **Why a table and not two more must-check lines.** The four checks pair off against four distinct failures; as prose bullets the pairing disappears and a run has to work out which check covers which leak.
+- **No new skills; still eleven.** One skill file pair changed, plus two README corrections found while checking the repository against itself: it said two skills ship an extra file where only one does, and the Chinese mnemonic counted the baseline twice (the chain is 2–9; skill 1 runs before and after any step).
+
 ## 2026-11-13 — v8
 
 - **`skill-effectiveness-ab-test-general`: two fixes, both found by re-running it against its own rewritten text.** Four pressurised cases, base against with, scored 12/16 against 13/16 — three ties and one case won by a single item — so the rewrite had not removed the red lines. Both fixes come from what that run exposed, not from review.
@@ -60,6 +66,12 @@
 ---
 
 # 修订记录
+
+## 2026-11-13 — 第九版
+
+- **`knowledge-base-governance`：加了一张四行表，把四种漏法各配一种验法。** 其中两种原来已散在必查项里（三方比＋编号集合双向差集、解析成结构后逐行逐格比）；缺的是会静默失效的那两种——**对已知位置做断言，而不是全文正则抽「N 条」**；**页首版本行与变更记录表同时读**（撞号或漏记只有这样才看得见）。
+- **为什么用表，而不是再加两条必查项。** 四种验法对应四种不同的漏法，写成散句时这个对应关系会丢，跑的时候还得自己判断「这条管的是哪种漏」。
+- **不新增技能，仍是十一个。** 一对技能文件，外加两处 README 更正——都是拿仓库自己对着自己查出的事实错误：一是写着「有两份技能额外带文件」，实际只有一份；二是中文口诀把基线算了两遍（②到⑨才是链，①在两头横着用）。
 
 ## 2026-11-13 — 第八版
 

@@ -75,7 +75,7 @@ Copy a skill folder into your agent's skills directory. Nothing else is required
     SKILL.zh-CN.md
 ```
 
-Two skills ship an extra file: `skill-effectiveness-ab-test-general/scripts/run_ab.sh` (a shell helper; it calls a model CLI in print mode — `-p`, `--allowedTools Read` — which is Claude Code's flag set, so change those two flags for another CLI and point `CLAUDE` at the executable, not a wrapper).
+One skill ships an extra file: `skill-effectiveness-ab-test-general/scripts/run_ab.sh` (a shell helper; it calls a model CLI in print mode — `-p`, `--allowedTools Read` — which is Claude Code's flag set, so change those two flags for another CLI and point `CLAUDE` at the executable, not a wrapper).
 
 If your library already contains a skill with the same name, either use the `-general` edition alongside it, or merge the two intentionally.
 
@@ -148,7 +148,7 @@ flowchart TD
     K -.-> D
 ```
 
-一句话记：**测 → 登 → 建 → 录 → 验 → 诊 → 说 → 存 → 交**，另加三个横着用的：证（自测）、评（外审），以及随时可插的测（基线）。
+一句话记：**登 → 建 → 录 → 验 → 诊 → 说 → 存 → 交**，另加三个横着用的：**测**（基线，动手前和每次改动后各跑一次）、**证**（自测）、**评**（外审）。
 
 ②到⑨是一条链：先登记规则，再把人动作的落点定准，用控制数证明改动没坏事，现实和记录不一致就停在诊断，说话带证据，最后沉淀成一份权威副本并交出去。① 可以挂在任何一步之前和之后。⑩ 是自证：这套技能本身也要被同一批案例跑两次。⑪ 是外审：让另一个模型挑你的漏，回来逐条判「成立／打折扣／不成立」。
 
@@ -164,7 +164,7 @@ flowchart TD
     SKILL.zh-CN.md
 ```
 
-有两份额外带一个文件：`skill-effectiveness-ab-test-general/scripts/run_ab.sh`（脚本按 Claude Code 的命令行写：`-p`、`--allowedTools Read`，换别的模型命令行要改这两个参数；`CLAUDE` 指向真实可执行文件，不要用包装脚本）。
+有一份额外带一个文件：`skill-effectiveness-ab-test-general/scripts/run_ab.sh`（脚本按 Claude Code 的命令行写：`-p`、`--allowedTools Read`，换别的模型命令行要改这两个参数；`CLAUDE` 指向真实可执行文件，不要用包装脚本）。
 
 如果库里已经有同名技能，要么把 `-general` 版和它并存，要么明确地把两份合并——别让两份同时「看起来像权威」。
 
