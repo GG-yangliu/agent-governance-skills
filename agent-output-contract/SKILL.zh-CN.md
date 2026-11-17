@@ -1,4 +1,4 @@
----
+教育行业---
 name: agent-output-contract
 description: "要求 AI 读数据后带证据回答时用本技能。"
 ---
