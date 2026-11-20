@@ -25,6 +25,8 @@ Check the answer itself, not the data model. Rules are generic; the examples bel
 - **An approximation carried as a figure.** Keep it out of totals and label it approximate.
 - **A completion status whose evidence is missing.** Do not treat "done" as verified: show the status and the missing evidence side by side and call it a conflict.
 - **One entity or status in several spellings.** State which rows matched and which did not, so the reader knows what the answer covers.
+- **A total sent without its parts.** When asked how much, how many, or how far off, give the total, the part already accounted for, and the remainder, and write the equation. A single number is not an answer: the reader cannot check arithmetic they were never shown.
+- **A figure without its business key.** Record ids serve machines. The reader needs the contract, batch, or asset number the figure belongs to — the same count means different things on different objects.
 
 ## Examples
 

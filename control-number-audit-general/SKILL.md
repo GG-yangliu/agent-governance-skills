@@ -30,6 +30,7 @@ Run these before reporting any total. Examples illustrate; they do not limit wha
 - **Text in numeric cells.** List each one; summing them as zero hides missing data behind a clean total.
 - **Mixed units, scale or basis.** Unify and state the basis, or mark the total non-comparable.
 - **Ambiguous identifier characters and mixed date formats.** They break matching and period cut-offs; normalize, then list what changed.
+- **Blanks that carry a business amount.** A row with a real amount but an empty paid/remaining column is not zero. Either cite the rule that puts it out of scope, or list it as unexplained. Every blank gets a reason and an owner; unexplained blanks go on the exception list.
 
 ## Examples
 

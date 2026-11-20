@@ -187,6 +187,7 @@ Before reporting, confirm each of these. Examples illustrate; they do not limit 
 - **Superseded term counted per carrier**, each remaining hit classified as a supersede note or history.
 - **Legibility rendered**, not inferred from a clean value diff.
 - **Publication state written**: published, or ready with running pending implementation.
+- **Every rule names where it is enforced.** A rule that lives only in a document is advisory, however precise it reads. Record the enforcement point — script check, field description, prompt clause, or pre-write gate — and whether a machine check actually exists. Rules with no enforcement point are the risk list; publishing a rule without one is an unfinished change, not a completed one.
 
 ## Examples
 

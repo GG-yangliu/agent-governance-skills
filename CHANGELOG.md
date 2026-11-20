@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-20 — v10
+
+- **Three skill files gained one check each, all from the same incident.** An agent asked "how much is left to pay" read a blank cell and answered "not paid yet", then argued a correct total was overstated. The blank carried no status; the number was right. The rule forbidding that reading (blank ≠ zero) existed in the business's own reference, in prose, and was enforced nowhere.
+- **`agent-output-contract`: two must-checks.** A total sent without its parts — asked how much, how many or how far off, give the total, the part already accounted for, the remainder, and write the equation; one number cannot be checked. And a figure without its business key — record ids serve machines, while the reader needs the contract, batch or asset number the figure belongs to, because the same count means different things on different objects.
+- **`control-number-audit-general`: one must-check.** A row carrying a real amount with an empty paid/remaining column is not zero: either cite the rule that puts it out of scope, or list it as unexplained. Every blank gets a reason and an owner; unexplained blanks go on the exception list, next to the duplicates and the text-in-number cells.
+- **`business-rule-registry-general`: one must-check aimed at the registry itself.** A rule that lives only in a document is advisory however precisely it reads. Registration now requires naming the enforcement point — script check, field description, prompt clause, pre-write gate — and whether a machine check exists. Rules with no enforcement point are the risk list; publishing a rule without one is an unfinished change.
+- **Why three lines and not a twelfth skill.** The failure was not a missing method but a method with nowhere to run: the library already said to prove a change and to answer with evidence, and neither said where that proof lives. Adding checks to the skills that already load is what makes them apply.
+- **No new skills; still eleven.** Three file pairs changed, both languages each.
+
 ## 2026-11-13 — v9
 
 - **`knowledge-base-governance`: added a four-row table that maps each failure mode to its check.** The skill already carried two of the four checks inside its must-check lines (three-way comparison with a set difference; parsing both sides and comparing row by row). The two that were missing are the ones that fail silently: asserting on known positions instead of regexing "N items" out of the whole text, and reading the version line together with the change-log table so that a collision or a missing entry shows up.
